@@ -28,5 +28,18 @@ class UserDTO {
         );
     }
 
+    public static function listUser(mixed $entity) {
+        $resul[] = [
+            'id' => $entity->id,
+            'name' => $entity->name,
+            'email' => $entity->email,
+            'role' => $entity->role
+        ];
+    }
+
+    public static function toResponse() {
+        
+    }
+
 }
 ?>

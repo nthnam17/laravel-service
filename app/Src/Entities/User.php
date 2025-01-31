@@ -76,7 +76,7 @@ class User
             'name' => (string)$this->getName(),
             'email' => (string)$this->getEmail(),
             'password' => (string)$this->getPassword(),
-            'is_active' => $this->is_active,
+            'is_active' => $this->activate(),
         ];
     }
 }
